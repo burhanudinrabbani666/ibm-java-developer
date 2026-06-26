@@ -16,5 +16,12 @@ public class AdvanceOperator {
          * --
          */
 
+        // Teranry operators
+        byte ao = 10;
+        byte bo = 20;
+
+        byte max = (ao > bo) ? ao : bo;
+        System.out.println("Maximum value is: " + max);
+
     }
 }
