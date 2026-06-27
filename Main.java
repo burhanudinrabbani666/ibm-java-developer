@@ -1,16 +1,22 @@
-import object_oriented_programming.module_1.Car;
+// import object_oriented_programming.module_1.Car;
+// import object_oriented_programming.module_1.Book;
+
+import object_oriented_programming.module_1.Person;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Car myCar = new Car();
+        Person newPerson = new Person("burhanudin rabbani", 23);
 
-        myCar.color = "sky blue";
-        myCar.models = "Nissan Skyline";
-        myCar.year = 2002;
+        System.out.println("Name: " + newPerson.getName());
+        System.out.println("Age: " + newPerson.getAge());
 
-        myCar.displayInfo();
+        newPerson.setName("dragon");
+        newPerson.setAge(1000);
+
+        System.out.println("Name: " + newPerson.getName());
+        System.out.println("Age: " + newPerson.getAge());
 
     }
 
