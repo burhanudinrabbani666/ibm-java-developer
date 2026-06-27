@@ -1,25 +1,17 @@
-
-// import object_oriented_programming.module_1.Car;
-import object_oriented_programming.module_1.Book;
-// import object_oriented_programming.module_1.Person;
+import object_oriented_programming.module_2.Animal.Cat;
+import object_oriented_programming.module_2.Animal.Dog;
 
 public class Main {
 
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) {
+        Dog newDog = new Dog();
+        newDog.name = "wowok";
+        newDog.eat();
+        newDog.bark();
+        newDog.sound();
 
-        Book book1 = new Book("Dari penjara ke penjara", "Tan malaka", 90000);
+        Cat newCat = new Cat();
+        newCat.sound();
 
-        Book book2 = new Book();
-        book2.setAuthor("Jane austen");
-        book2.setPrice(50000);
-        book2.setTitle("Pride and Prejudice");
-
-        System.out.println("Book no.1");
-        System.out.println(book1);
-        System.out.println("Book no.2");
-        System.out.println(book2);
-
-        Book book3 = (Book) (book1.clone());
     }
-
 }
