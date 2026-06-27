@@ -1,13 +1,17 @@
-import java_programming_for_beginners.src.test.Users;
-import java.time.*;
+import object_oriented_programming.module_1.Car;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Users newUsers = new Users("burhanudin rabbani");
-        newUsers.greeting();
+        Car myCar = new Car();
 
-        System.err.println(LocalDate.now());
+        myCar.color = "sky blue";
+        myCar.models = "Nissan Skyline";
+        myCar.year = 2002;
+
+        myCar.displayInfo();
+
     }
+
 }
