@@ -89,3 +89,21 @@ Queue Implementation in Java
 - The Java Collections Framework includes a Queue interface, commonly implemented using LinkedList.
 - Methods like offer() add elements to the queue, and poll() removes and retrieves the front element.
 - A practical example models a customer service line where customers are served in the order they arrive, demonstrating enqueue and dequeue operations in Java code.
+
+HashMaps
+
+- HashMaps implement the Map interface using a hash table, providing average constant time complexity (O(1)) for lookups.
+- They allow one null key and multiple null values but do not guarantee any order of entries.
+- Common uses include fast data access, counting items like word frequencies, and implementing dictionaries or associative arrays.
+
+TreeMaps
+
+- TreeMaps implement the Map interface using a red-black tree, maintaining entries in sorted order by keys.
+- They provide navigable maps with average logarithmic time complexity (O(log n)) for access.
+- Ideal for applications requiring sorted data, priority queues, range queries, and ordered iteration.
+
+Comparison and Use Cases
+
+- HashMaps are faster and use less memory but do not maintain order and allow null keys.
+- TreeMaps maintain sorted order, do not allow null keys, and use more memory, making them suitable when order matters.
+- Choosing between them depends on whether fast access or sorted order is the priority in the application.
