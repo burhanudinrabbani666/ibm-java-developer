@@ -18,7 +18,7 @@ public class SetExample {
             count++;
         }
 
-        // Sorted automaticallyc -> slower performance
+        // Sorted automaticallyc -> slower performance.
         TreeSet<Integer> numbers = new TreeSet<>();
 
         numbers.add(1);
